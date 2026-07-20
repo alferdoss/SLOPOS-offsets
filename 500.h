@@ -1,0 +1,19 @@
+#pragma once
+
+#define kern_off_xfast_syscall    0x1C0
+#define kern_off_prison0          0x10986A0
+#define kern_off_rootvnode        0x22C19F0
+#define kern_off_copyout          0x1EA520
+#define kern_off_disable_aslr     0x194765
+#define kern_off_mmap_self_1      0x117B0
+#define kern_off_mmap_self_2      0x117C0
+#define kern_off_mmap_self_3      0x13EF2F
+#define kern_off_reg_mgr_set_int  0x4F8940
+#define kern_off_set_time         0x633CB0
+#define kern_off_clear_time_diff  0x6342B0
+#define kern_off_target_id        0x1CD068D
+#define kern_off_icc_nvs_write    0x3952A0
+#define kern_off_npdrm_open       0x64D420
+#define kern_off_npdrm_close      0x64D440
+#define kern_off_npdrm_ioctl      0x64D497
+#define kern_off_no_bd_patch      0x218E52

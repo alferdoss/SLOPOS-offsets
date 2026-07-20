@@ -1,0 +1,37 @@
+#pragma once
+
+#define kern_off_xfast_syscall             0x30EB30
+#define kern_off_prison0                   0xF26010
+#define kern_off_rootvnode                 0x206D250
+#define kern_off_printf                    0x347580
+#define kern_off_copyin                    0x286DF0
+#define kern_off_copyout                   0x286D70
+#define kern_off_copyinstr                 0x287160
+#define kern_off_kmem_alloc_contig         0x275ED0
+#define kern_off_kmem_free                 0x3696B0
+#define kern_off_kernel_map                0x1FE71B8
+#define kern_off_sysent                    0xF17790
+#define kern_off_pmap_extract              0x3EF000
+#define kern_off_pmap_protect              0x3F1250
+#define kern_off_kernel_pmap_store         0x200C310
+#define kern_off_pml4pml4i                 0x200C300
+#define kern_off_dmpml4i                   0x200C304
+#define kern_off_dmpdpi                    0x200C308
+#define kern_off_sched_pin                 0x1D1250
+#define kern_off_sched_unpin               0x1D12B0
+#define kern_off_smp_rendezvous            0x34A150
+#define kern_off_smp_no_rendevous_barrier  0x349F10
+#define kern_off_icc_query_nowait          0x46C6D0
+#define kern_off_gpu_devid_is_9924         0x4B9030
+#define kern_off_gc_get_fw_info            0x4A19A0
+#define kern_off_disable_aslr              0x2862D6
+#define kern_off_mmap_self_1               0x3605F0
+#define kern_off_mmap_self_2               0x360600
+#define kern_off_mmap_self_3               0x31EE37
+#define kern_off_reg_mgr_set_int           0x4CEAB0
+#define kern_off_set_time                  0x609920
+#define kern_off_target_id                 0x200151D
+#define kern_off_icc_nvs_write             0x3C83A0
+#define kern_off_npdrm_open                0x6204F0
+#define kern_off_npdrm_close               0x620510
+#define kern_off_npdrm_ioctl               0x62056D
