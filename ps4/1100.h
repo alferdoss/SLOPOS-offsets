@@ -1,40 +1,59 @@
 #pragma once
+/* PS4 11.00 — kexec offsets: EinTim23 */
 
 #define kern_off_xfast_syscall             0x1C0
+
 #define kern_off_prison0                   0x111F830
 #define kern_off_rootvnode                 0x2116640
 #define kern_off_allproc                   0x22D0A98
+
+/* kern_off_vmspace_acquire_ref TODO — help wanted */
+/* kern_off_vmspace_free TODO — help wanted */
+/* kern_off_proc_rwmem TODO — help wanted */
+
 #define kern_off_printf                    0x2FCBD0
 #define kern_off_snprintf                  0x2FCED0
 #define kern_off_copyin                    0x2DDFE0
 #define kern_off_copyout                   0x2DDEF0
 #define kern_off_copyinstr                 0x2DE490
+
+#define kern_off_kmem_alloc                0x245E10
 #define kern_off_kmem_alloc_contig         0x22F8D0
 #define kern_off_kmem_free                 0x245FE0
+
 #define kern_off_kernel_map                0x21FF130
+#define kern_off_kernel_pmap_store         0x2162A88
 #define kern_off_sysent                    0x1101760
+
 #define kern_off_pmap_extract              0x114290
 #define kern_off_pmap_protect              0x115430
-#define kern_off_kernel_pmap_store         0x2162A88
+
 #define kern_off_pml4pml4i                 0x2162A78
 #define kern_off_dmpml4i                   0x2162A7C
 #define kern_off_dmpdpi                    0x2162A80
+
 #define kern_off_sched_pin                 0x2BB9B0
 #define kern_off_sched_unpin               0x2BB9D0
 #define kern_off_smp_rendezvous            0x1342C0
 #define kern_off_smp_no_rendevous_barrier  0x1340D0
 #define kern_off_icc_query_nowait          0x39F3F0
+
 #define kern_off_gpu_devid_is_9924         0x4B4A70
 #define kern_off_gc_get_fw_info            0x4B1FC0
 #define kern_off_set_gpu_freq              0x4B0B00
 #define kern_off_set_pstate                0x4C8CE0
 #define kern_off_update_vddnp              0x4B10A0
 #define kern_off_set_cu_power_gate         0x4B14B0
+#define kern_off_set_nclk_mem_spd          0x2F56A0
+#define kern_off_Starsha_UcodeInfo         0x0
+
+#define kern_off_pstate_before_shutdown    0x198650
+#define kern_off_kern_reboot               0x198060
+
 #define kern_off_eap_hdd_key               0x26C4CD0
 #define kern_off_edid                      0x2749E58
 #define kern_off_wlanbt                    0x1D1570
-#define kern_off_kern_reboot               0x198060
-#define kern_off_pstate_before_shutdown    0x198650
+
 #define kern_off_disable_aslr              0x3B11A4
 #define kern_off_mmap_self_1               0x3D0E50
 #define kern_off_mmap_self_2               0x3D0E70

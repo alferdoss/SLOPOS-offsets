@@ -1,39 +1,59 @@
 #pragma once
+/* PS4 6.72 — kexec offsets: ethylamine Joonie86 mircoho */
 
 #define kern_off_xfast_syscall             0x1C0
+
 #define kern_off_prison0                   0x113E518
 #define kern_off_rootvnode                 0x2300320
 #define kern_off_allproc                   0x22BBE80
+
 #define kern_off_vmspace_acquire_ref       0x44CB90
 #define kern_off_vmspace_free              0x44C9C0
+#define kern_off_proc_rwmem                0x10EE10
+
 #define kern_off_printf                    0x123280
 #define kern_off_snprintf                  0x123590
 #define kern_off_copyin                    0x3C17A0
 #define kern_off_copyout                   0x3C16B0
 #define kern_off_copyinstr                 0x3C1C50
+
 #define kern_off_kmem_alloc                0x250730
 #define kern_off_kmem_alloc_contig         0xB71C0
 #define kern_off_kmem_free                 0x250900
+
 #define kern_off_kernel_map                0x220DFC0
+#define kern_off_kernel_pmap_store         0x1BB7880
 #define kern_off_sysent                    0x111E000
-#define kern_off_proc_rwmem                0x10EE10
+
 #define kern_off_pmap_extract              0x4E420
 #define kern_off_pmap_protect              0x50F50
-#define kern_off_kernel_pmap_store         0x1BB7880
+
 #define kern_off_pml4pml4i                 0x1BB7870
 #define kern_off_dmpml4i                   0x1BB7874
 #define kern_off_dmpdpi                    0x1BB7878
+
 #define kern_off_sched_pin                 0x446A30
 #define kern_off_sched_unpin               0x446A40
 #define kern_off_smp_rendezvous            0x2C93C0
 #define kern_off_smp_no_rendevous_barrier  0x2C9180
 #define kern_off_icc_query_nowait          0x3F290
+
 #define kern_off_gpu_devid_is_9924         0x4E82D0
 #define kern_off_gc_get_fw_info            0x4E1A50
+#define kern_off_set_gpu_freq              0x4E0530
+#define kern_off_set_pstate                0x4FC2E0
+#define kern_off_update_vddnp              0x4E0B10
+#define kern_off_set_cu_power_gate         0x4E0F20
+#define kern_off_set_nclk_mem_spd          0x19A390
+#define kern_off_Starsha_UcodeInfo         0x0
+
+#define kern_off_pstate_before_shutdown    0x20734E
+#define kern_off_kern_reboot               0x206D50
+
 #define kern_off_eap_hdd_key               0x26DCCD0
 #define kern_off_edid                      0x2764100
 #define kern_off_wlanbt                    0x1CDD80
-#define kern_off_kern_reboot               0x206D50
+
 #define kern_off_disable_aslr              0x3CECE1
 #define kern_off_mmap_self_1               0x233C40
 #define kern_off_mmap_self_2               0x233C50
