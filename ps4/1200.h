@@ -6,9 +6,10 @@
 #define kern_off_prison0                   0x111FA18
 #define kern_off_rootvnode                 0x2136E90
 
-/* kern_off_vmspace_acquire_ref TODO — help wanted */
-/* kern_off_vmspace_free TODO — help wanted */
-/* kern_off_proc_rwmem TODO — help wanted */
+#define kern_off_allproc                   0x1B28538
+#define kern_off_vmspace_acquire_ref       0x2F6F20
+#define kern_off_vmspace_free              0x2F6D50
+#define kern_off_proc_rwmem                0x365FA0
 
 #define kern_off_printf                    0x2E03E0
 #define kern_off_snprintf                  0x2E06E0
