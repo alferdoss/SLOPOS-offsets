@@ -7,9 +7,9 @@
 #define kern_off_rootvnode                 0x1BF81F0
 #define kern_off_allproc                   0x2269F30
 
-/* kern_off_vmspace_acquire_ref TODO — help wanted */
-/* kern_off_vmspace_free TODO — help wanted */
-/* kern_off_proc_rwmem TODO — help wanted */
+#define kern_off_vmspace_acquire_ref       0x476140
+#define kern_off_vmspace_free              0x475F70
+#define kern_off_proc_rwmem                0x4244A0
 
 #define kern_off_printf                    0x450E80
 #define kern_off_snprintf                  0x451180
