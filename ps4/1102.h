@@ -1,14 +1,16 @@
 #pragma once
 /* PS4 11.02 — kexec offsets: BestPig */
+/* PS4 11.02 allproc, vmspace, proc_rwmem: MSI_Ins_Dir (kernel dump) */
 
 #define kern_off_xfast_syscall             0x1C0
 
 #define kern_off_prison0                   0x111F830
 #define kern_off_rootvnode                 0x2116640
 
-/* kern_off_vmspace_acquire_ref TODO — help wanted */
-/* kern_off_vmspace_free TODO — help wanted */
-/* kern_off_proc_rwmem TODO — help wanted */
+#define kern_off_allproc                   0x22D0A98
+#define kern_off_vmspace_acquire_ref       0x357740
+#define kern_off_vmspace_free              0x357570
+#define kern_off_proc_rwmem                0x3838C0
 
 #define kern_off_printf                    0x2FCBF0
 #define kern_off_snprintf                  0x2FCEF0
